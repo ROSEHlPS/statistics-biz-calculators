@@ -2,7 +2,9 @@
 #program prints standard deviations
 
 #NUMBER OF SALES PER DAY
-sales = [2, 10, 9, 4, 8, 1, 8, 7, 9, 6, 9, 5, 5]
+entered_sales = input("Enter each sale per day, separated by a space: ").split()
+sales = list(map(int,entered_sales))
+#sales = [2, 10, 9, 4, 8, 1, 8, 7, 9, 6, 9, 5, 5]
 
 #sales
 #sales and orders
@@ -54,7 +56,9 @@ print ("Standard deviation of number of sales: ", sales_std_deviation(variance))
 print ("------")
 
 #VALUE OF EACH SALE'S TOTAL $$
-revenue = [1, 1, 9, 4, 8, 1, 8, 7, 0, 6, 9, 5, 5]
+
+entered_revenue = input("Enter the amount made per sale, separated by a space: ").split()
+revenue = list(map(int,entered_revenue))
 
 #sales
 def print_revenues(revenue_input):
